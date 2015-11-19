@@ -26,7 +26,7 @@ Route::get('/', function () {
 	// channel built in on redis
 	Redis::publish('test-channel', json_encode($data));
 
-	reu
+	return 'Done';
 	// 2. Node.js + Redis subscribes to the event
 	// 3. Use socket.io to emit to all clients
 	// Redis::set('name', 'shane');
